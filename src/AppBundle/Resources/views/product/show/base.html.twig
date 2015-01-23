@@ -1,0 +1,8 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block h1 %}{{ product.name }}{% endblock h1 %}
+
+{% block content %}
+    <a href="{{ path('product_list') }}">Back to the listing</a>
+    <p>{{ product.description }}</p>
+{% endblock %}
